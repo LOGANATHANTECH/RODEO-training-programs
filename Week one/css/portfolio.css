@@ -209,9 +209,21 @@ nav {
 .card{
     height: 100%;
     width: 31%;
-    background-color: #203b22
+    background-color: #203b22;
+    animation-name: cardAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 }
-
+@keyframes cardAnimation {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 /* card */
 .cardImg{
     height: 50px;
