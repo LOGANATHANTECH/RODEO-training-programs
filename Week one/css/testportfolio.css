@@ -583,3 +583,107 @@ footer {
   width: 24px;
   height: 24px;
 }
+
+/* -----------------------
+   RESPONSIVE ENHANCEMENTS
+   ----------------------- */
+
+/* Large laptops/desktops */
+@media (max-width: 1400px) {
+  body { width: 90vw; }
+  nav  { width: 90vw; }
+}
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+  body { width: 95vw; }
+  nav  { width: 95vw; }
+
+  .navBar {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 8px 10px;
+  }
+  #loganathan {
+    margin-right: 0;
+    order: -1; /* logo first row */
+  }
+  .navElement {
+    width: auto;
+    height: auto;
+  }
+
+  .profile, .about, .project, .contact {
+    height: auto;               /* prevent overflow */
+    min-height: auto;
+    flex-direction: column;     /* stack */
+    padding: 20px 12px;
+    gap: 16px;
+  }
+  .intro, .photo, .aboutPhoto, .aboutContent {
+    width: 100%;
+    padding: 12px;
+  }
+  .photo img { width: 75%; height: auto; }
+
+  .aboutPhoto { rotate: 0deg; margin-top: 0; }
+
+  .projectContent { padding: 10px; }
+
+  .card { width: 45%; height: auto; }
+  .card .top-section { height: 180px; }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+  body, nav { width: 100vw; margin: 0; }
+
+  .navBar {
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .navElement a {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  #socials {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .photo img { width: 85%; }
+
+  .skills {
+    margin: 20px 8px;
+    padding: 30px 12px;
+  }
+  .skills h2 { font-size: 1.8rem; }
+
+  .card { width: 100%; }
+  .card .top-section { height: 160px; }
+
+  #ContactSection { height: auto; padding: 20px 12px; }
+  .form { height: auto; }
+
+  /* Make button flow naturally on small screens */
+  .form button {
+    position: static;
+    margin: 20px auto 0;
+    display: block;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+  .intro p, .aboutContent p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+  .profile h1 { font-size: 1.8rem; }
+  .aboutContent h2 { font-size: 1.6rem; }
+
+  .card .bottom-section .title { font-size: 15px; }
+  .card .bottom-section .row .item .big-text { font-size: 11px; }
+  .card .bottom-section .row .item .regular-text { font-size: 8px; }
+}
