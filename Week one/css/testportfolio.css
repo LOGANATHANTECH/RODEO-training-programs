@@ -8,7 +8,8 @@ body {
   width: 80vw;
   margin: auto;
   font-family: Arial, sans-serif;
-  background: radial-gradient(circle, #0ae71c, #132511);
+  background: radial-gradient(circle, #616461, #636463);
+  /* background: linear-gradient(to top, #1eee02, #131b12); */
 }
 
 nav {
@@ -24,7 +25,7 @@ nav {
 .navBar {
   height: 100%;
   width: 100%;
-  background-color: #132511;
+  background-color: transparent;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -51,6 +52,7 @@ nav {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  
 }
 
 .navElement {
@@ -58,13 +60,14 @@ nav {
   width: 10%;
   color: aqua;
   background-color: transparent;
+    border: 0;
+  border-radius: 15px;
 
 
 }
 
 .navElement:hover {
-  color: #0ae71c;
-  box-shadow: 2px 2px 4px;
+  background: radial-gradient(circle, #3d3f3d, #bbbebb);
 }
 
 .navElement a {
@@ -89,16 +92,18 @@ nav {
   height: 81vh;
   margin-bottom: 3px;
   color: #fdfffe;
-  background-color: #132511;
+  background-color: transparent;
   border: 0 solid #fdfffe;
   border-radius: 5px;
   display: flex;
-  box-shadow: -4px -4px 8px rgb(15, 230, 43);
+  box-shadow: 0 0 3px rgb(15, 230, 43);
 
 }
 
 .profile h1 {
-  color: #189e5b;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #01f179;
 
 }
 
@@ -112,6 +117,10 @@ nav {
 }
 
 .intro p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+
   color: #f9fff8;
   font-size: 1.1rem;
   letter-spacing: 1px;
@@ -172,7 +181,7 @@ nav {
 }
 
 .photo img:hover {
-  box-shadow: 0 0 15px #0ae71c;
+  box-shadow: 0 0 3px #0ae71c;
 }
 
 /* about section */
@@ -195,10 +204,12 @@ nav {
 }
 
 .aboutContent h2 {
-  color: #189e5b;
+  color: #01f179;
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 10px;
+  margin-bottom: 10px;
+
 }
 
 .aboutContent p {
@@ -209,28 +220,21 @@ nav {
   font-weight: 300;
 }
 
-.aboutContent button {
-  height: 50px;
-  width: 140px;
-  margin-top: 90px;
-  padding: 1px;
-  border: 0px solid white;
-  border-radius: 17px;
-  background-color: #2dda0f;
-  /* box-shadow: 1px 1px 5px white; */
-}
 
 .aboutContent button:hover {
-  background-color: #43fc22;
+  background: radial-gradient(circle, #3d3f3d, #bbbebb);
   /* box-shadow: -2px -2px 6px white; */
 }
 
-.aboutContent button a {
-  height: 100%;
-  width: 100%;
-  /* border: 2px solid #e7ece8; */
+.aboutContent a button {
+  height: 50px;
+  width: 130px;
+  margin-top: 30px;
+  border: 0;
+  border-radius: 15px;
   color: #f9fff8;
   text-decoration: none;
+  background: #3b423c;
   font-weight: bold;
   font-size: 1.1rem;
 }
@@ -241,18 +245,18 @@ nav {
   width: 100%;
   min-height: 81vh;
   margin-bottom: 3px;
-  background-color: #132511;
+  background-color: transparent;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px 20px;
-  box-shadow: -4px -4px 8px rgb(15, 230, 43);
+  box-shadow: 0 0 3px rgb(15, 230, 43);
 }
 
 /* section heading */
 .section-heading {
-  color: #7fff3c;
+  color: #f6f8f7;
   /* bright neon heading */
   font-size: 2rem;
   margin-bottom: 40px;
@@ -279,12 +283,12 @@ nav {
   width: 100%;
   max-width: 320px;
   border-radius: 15px;
-  background: #203b22;
+  background: #4b554c;
   padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 0 12px rgba(10, 231, 28, 0.25);
+
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
 }
@@ -321,7 +325,7 @@ nav {
 .card .bottom-section .title {
   font-size: 1.1rem;
   font-weight: bold;
-  color: #2dda0f;
+  color: #01f179;
   /* neon green accent */
   margin-bottom: 10px;
 }
@@ -347,11 +351,11 @@ nav {
 
 /* button */
 .projectButton {
-  background-color: #2dda0f;
+   background: #3b423c;
   border: none;
   padding: 10px 18px;
   border-radius: 12px;
-  color: #132511;
+  color: #fcfffb;
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s, transform 0.2s;
@@ -359,8 +363,7 @@ nav {
 }
 
 .projectButton:hover {
-  background-color: #7fff3c;
-  transform: scale(1.05);
+  background: radial-gradient(circle, #3d3f3d, #bbbebb);
 }
 
 /* ---- RESPONSIVE ---- */
@@ -388,20 +391,17 @@ nav {
 /* skills section */
 .skills {
   width: 100%;
-  height: 81vh;
-  /* same as profile/about/project */
+  height: auto;
   margin-bottom: 3px;
   color: #eaecea;
-  background-color: #132511;
+  background-color: transparent;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  /* stack title + grid */
   align-items: center;
   justify-content: flex-start;
-  /* keep header on top */
   padding: 40px 20px;
-  box-shadow: -4px -4px 8px rgb(15, 230, 43);
+  box-shadow: 0 0 3px rgb(15, 230, 43);
   text-align: center;
 }
 
@@ -422,10 +422,10 @@ nav {
 }
 
 .skill-card {
-  background: #203b22;
+  background: #4b554c;
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 0 15px rgba(10, 231, 28, 0.4);
+  box-shadow: 0 0 3px rgba(10, 231, 28, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -434,7 +434,7 @@ nav {
 
 .skill-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 0 25px #0ae71c;
+  box-shadow: 0 0 4px #0ae71c;
 }
 
 .skill-card i {
@@ -464,13 +464,14 @@ nav {
   min-height: 81vh;
   /* flexible height instead of fixed */
   margin-bottom: 3px;
-  background-color: #132511;
+  background-color: transparent;
+  ;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px 20px;
-  box-shadow: -4px -4px 8px rgb(15, 230, 43);
+  box-shadow: 0 0 3px rgb(15, 230, 43);
 }
 
 .contact h1 {
@@ -483,10 +484,10 @@ nav {
   width: 100%;
   max-width: 800px;
   /* keeps form centered */
-  background-color: #203b22;
+  background: #4b554c;
   padding: 25px 30px;
   border-radius: 15px;
-  box-shadow: 0 0 15px #0ae71c;
+  box-shadow: inset 0 0 3px #0ae71c;
   color: #f9fff8;
   display: flex;
   flex-direction: column;
@@ -504,10 +505,10 @@ nav {
   padding: 15px;
   border-radius: 10px;
   border: none;
-  background-color: #132511;
+  background-color: #676b66;
   color: #f9fff8;
   font-size: 1rem;
-  box-shadow: inset 1px 1px 5px #0ae71c;
+  box-shadow: inset 0 0 3px #0ae71c;
   outline: none;
 }
 
@@ -519,12 +520,11 @@ nav {
   width: 100%;
   height: 150px;
   padding: 15px;
-  margin-top: 10px;
   border-radius: 12px;
-  background-color: #132511;
+  background-color: #676b66;
   color: #f9fff8;
   border: none;
-  box-shadow: inset 1px 1px 5px #0ae71c;
+  box-shadow: inset 0 0 3px #0ae71c;
   resize: vertical;
   outline: none;
 }
@@ -537,20 +537,18 @@ nav {
   align-self: center;
   /* centers the button */
   padding: 12px 40px;
-  background-color: #2dda0f;
-  color: #132511;
+     background-color: #676b66;
+  color: #ffffff;
   font-weight: bold;
   font-size: 1rem;
   border: none;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px #1f6d05;
+  border-radius: 15px;
   transition: background-color 0.3s, transform 0.2s;
   cursor: pointer;
 }
 
 .form button:hover {
-  background-color: #7fff3c;
-  transform: scale(1.05);
+  background: radial-gradient(circle, #3d3f3d, #bbbebb);
 }
 
 .visually-hidden {
@@ -564,7 +562,7 @@ nav {
 
 /* footer page */
 footer {
-  background-color: #132511;
+  background-color: transparent;
   padding: 20px 0;
   text-align: center;
   color: #a4d49d;
@@ -588,7 +586,7 @@ footer {
 }
 
 .social-icons a {
-  color: #0ae71c;
+  color: #fbfffb;
   font-size: 1.5rem;
   margin: 0 12px;
   transition: color 0.3s ease;
@@ -605,7 +603,9 @@ footer {
   height: 24px;
 }
 
-/* RESPONSIVE*/
+/* -----------------------
+   RESPONSIVE ENHANCEMENTS
+   ----------------------- */
 
 /* Large laptops/desktops */
 @media (max-width: 1400px) {
@@ -615,11 +615,8 @@ footer {
 
   nav {
     width: 90vw;
-    position: sticky;
-    top: 1px;
   }
 }
-
 
 /* Tablets and small laptops */
 @media (max-width: 1024px) {
@@ -651,11 +648,12 @@ footer {
   .profile,
   .about,
   .project,
-  .contact,
-  .skills {
+  .contact {
     height: auto;
+    /* prevent overflow */
     min-height: auto;
     flex-direction: column;
+    /* stack */
     padding: 20px 12px;
     gap: 16px;
   }
@@ -744,14 +742,42 @@ footer {
 
   .form {
     height: auto;
-    width: auto;
-    display: block;
   }
 
-  /*button flow naturally on small screens */
+  /* Make button flow naturally on small screens */
   .form button {
     position: static;
     margin: 20px auto 0;
     display: block;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+
+  .intro p,
+  .aboutContent p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .profile h1 {
+    font-size: 1.8rem;
+  }
+
+  .aboutContent h2 {
+    font-size: 1.6rem;
+  }
+
+  .card .bottom-section .title {
+    font-size: 15px;
+  }
+
+  .card .bottom-section .row .item .big-text {
+    font-size: 11px;
+  }
+
+  .card .bottom-section .row .item .regular-text {
+    font-size: 8px;
   }
 }
