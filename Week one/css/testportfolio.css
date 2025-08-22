@@ -9,6 +9,7 @@ section {
 
 body {
   width: 80vw;
+  height: auto;
   margin: auto;
   font-family: Arial, sans-serif;
   background: radial-gradient(circle, #616461, #636463);
@@ -21,6 +22,7 @@ nav {
   margin-top: 5vh;
   position: sticky;
   top: 1px;
+  background: radial-gradient(circle, #616461, #636463);
   z-index: 1000;
 
 }
@@ -62,7 +64,7 @@ nav {
   height: 80%;
   width: 10%;
   color: aqua;
-  background-color: transparent;
+  background: radial-gradient(circle, #616461, #636463);
     border: 0;
   border-radius: 15px;
 
