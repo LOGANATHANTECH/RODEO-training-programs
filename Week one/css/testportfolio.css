@@ -28,7 +28,7 @@ nav {
 .navBar {
   height: 100%;
   width: 100%;
-  background-color: transparent;
+  background: radial-gradient(circle, #616461, #636463);
   display: flex;
   justify-content: space-around;
   align-items: center;
