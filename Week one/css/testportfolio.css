@@ -371,27 +371,6 @@ nav {
   background: radial-gradient(circle, #3d3f3d, #bbbebb);
 }
 
-/* ---- RESPONSIVE ---- */
-
-/* Tablets */
-@media (max-width: 992px) {
-  .projectContent {
-    grid-template-columns: repeat(2, 1fr);
-    /* 2 cards per row */
-  }
-}
-
-/* Mobiles */
-@media (max-width: 600px) {
-  .projectContent {
-    grid-template-columns: 1fr;
-    /* 1 card per row */
-  }
-
-  .section-heading {
-    font-size: 1.6rem;
-  }
-}
 
 /* skills section */
 .skills {
@@ -620,6 +599,25 @@ footer {
 
   nav {
     width: 90vw;
+  }
+}
+/* Tablets */
+@media (max-width: 992px) {
+  .projectContent {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 cards per row */
+  }
+}
+
+/* Mobiles */
+@media (max-width: 600px) {
+  .projectContent {
+    grid-template-columns: 1fr;
+    /* 1 card per row */
+  }
+
+  .section-heading {
+    font-size: 1.6rem;
   }
 }
 
