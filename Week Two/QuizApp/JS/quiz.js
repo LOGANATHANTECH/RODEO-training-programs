@@ -137,7 +137,7 @@ nextBtn.addEventListener("click", () => {
         setTimeout(() => {
             loadQuestion(currentQuestionIndex);
             resultDiv.textContent = "";
-        }, 300);
+        }, 400);
     }
 });
 
