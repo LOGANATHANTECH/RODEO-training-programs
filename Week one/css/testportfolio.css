@@ -363,7 +363,7 @@ nav {
   color: #fcfffb;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s, transform 0.2s;
+  transition:0.3s, transform 0.2s;
   align-self: center;
 }
 
@@ -449,7 +449,6 @@ nav {
   /* flexible height instead of fixed */
   margin-bottom: 3px;
   background-color: transparent;
-  ;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
