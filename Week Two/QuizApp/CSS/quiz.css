@@ -80,6 +80,54 @@
     font-weight: 600;
   }
 
+  /* finale output */
+#scoreDivision{
+  height: inherit;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+  #srore {
+  width: 100px;       /* fixed width */
+  height: 100px;      /* fixed height equal to width */
+  background-color: #75c0e0;
+  border-radius: 50%; /* makes it a perfect circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+#sroreText {
+  width: 100%;
+  height: 50%;
+  padding: 3%;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+    font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(162, 136, 233, 0.7);
+}
+
+#sroreText h3 {
+  color: #333;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+
   @media (max-width: 700px){
     section{
         width: 100%;
