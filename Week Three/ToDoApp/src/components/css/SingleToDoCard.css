@@ -1,0 +1,104 @@
+.card {
+    min-width: 300px;
+    background-color: #551b97cb;
+    border: none;
+    border-radius: 10px;
+    padding-top: 0;
+    color: aliceblue;
+    font-weight: bold;
+    
+
+}
+
+.cardTop {
+    height: 50px;
+    margin-top: 0;
+
+}
+
+.card ol {
+    border: none;
+    outline: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card ol li {
+
+    margin-top: 5px;
+    min-height: 40px;
+    width: 100%;
+    background-color: rgb(53, 24, 80);
+    border: 1px;
+    border-radius: 5px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+}
+#DoMoreBtn{
+    /* background-color: black; */
+    height: 15px;
+    width: 40px;
+    margin-left: 200px;
+    background-color: rgb(0, 204, 255);
+
+    
+}
+.textarea {
+    margin: 10px;
+    height: 40px;
+    width: 70%;
+    background-color: transparent;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+     transition: background-color 0.2s ease 0.2s;
+}
+.textarea::placeholder {
+    color: aliceblue;
+}
+.textarea:hover {
+    background-color: rgb(44, 28, 65);
+    
+
+
+}
+.card button{
+    height: 40px;
+    width: 70px;
+    margin: 10px;
+    position: absolute;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(60, 89, 250);
+}
+.card button:hover{
+    border: 1px;
+    box-shadow: 1px 1px 10px rgb(255, 255, 255);
+    color: beige;
+    background-color: rgba(60, 88, 250, 0.863);
+}
+.cardMid {
+    height: auto;
+    background-color: aliceblue;
+
+}
+
+.cardBot {
+    height: 30px;
+    background-color: rgb(144, 183, 218);
+
+}
+
+

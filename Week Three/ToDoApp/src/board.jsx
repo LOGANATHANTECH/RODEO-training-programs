@@ -1,4 +1,5 @@
-import Inbox from "./components/inbox"
+
+import BoardContent from "./components/boardContent";
 import './board.css'
 
 function Board() {
@@ -6,8 +7,8 @@ function Board() {
 
   return (
     <div className="board">
-      <Inbox />
-
+ 
+      <BoardContent />
     </div>
   )
 }
