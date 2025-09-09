@@ -4,6 +4,7 @@ const proceedButton = document.getElementById("proceedButton");
 let userName = "";
 
 homeContent2.style.display = "none";
+console.log(homeContent1);
 
 homeContent1.addEventListener("click", () => {
 

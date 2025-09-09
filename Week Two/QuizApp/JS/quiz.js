@@ -72,7 +72,6 @@ const quizData = [
     }
 ];
 
-
 const questionTitle = document.getElementById("question-title");
 const quizForm = document.getElementById("quiz-form");
 const nextBtn = document.getElementById("next-btn");
@@ -80,13 +79,13 @@ const resultDiv = document.getElementById("result");
 const scoreDivision = document.getElementById("scoreDivision");
 const sroreText = document.getElementById("sroreText");
 
-
-scoreDivision.style.display="none";
+scoreDivision.style.display = "none";
 let currentQuestionIndex = 0;
 let score = 0;
 
 function loadQuestion(index) {
     const q = quizData[index];
+    debugger;
     questionTitle.textContent = `${q.question}`;
     Object.keys(q.options).forEach(id => {
         const label = quizForm.querySelector(`label[for=${id}]`);
@@ -97,10 +96,7 @@ function loadQuestion(index) {
     resultDiv.textContent = "";
 }
 
-quizForm.addEventListener("change", () => {
-    nextBtn.disabled = false;
-    resultDiv.textContent = "";
-});
+quizForm.addEventListener("change", () => { nextBtn.disabled = false; });
 
 nextBtn.addEventListener("click", () => {
     const selectedOption = quizForm.option.value;
@@ -118,20 +114,18 @@ nextBtn.addEventListener("click", () => {
     }
     nextBtn.disabled = true;
 
-    // Update score inside the round div
-   
 
     currentQuestionIndex++;
     if (currentQuestionIndex === quizData.length) {
-        
-        setTimeout(() => {
-            questionTitle.style.display="none";
-            quizForm.style.display="none";
-            resultDiv.style.display="none";
 
-            scoreDivision.style.display="flex";
-             document.getElementById("srore").textContent = `${score}/${quizData.length}`;
-             sroreText.innerHTML=`Awesome effort ${userName}! Practice makes perfect`;
+        setTimeout(() => {
+            questionTitle.style.display = "none";
+            quizForm.style.display = "none";
+            resultDiv.style.display = "none";
+
+            scoreDivision.style.display = "flex";
+            document.getElementById("srore").textContent = `${score}/${quizData.length}`;
+            sroreText.innerHTML = `Awesome effort ${userName}! Practice makes perfect`;
         }, 1000);
     } else {
         setTimeout(() => {
@@ -141,5 +135,5 @@ nextBtn.addEventListener("click", () => {
     }
 });
 
-// Initial load
+// initial load
 loadQuestion(currentQuestionIndex);
